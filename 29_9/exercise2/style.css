@@ -1,22 +1,9 @@
 a {
-    color: orange;
-  }
-  
-  a:hover {
-    color: orange;
-  }
-  
-  
-  ul.a {
-    list-style-type: circle;
-  
-  }
-  
-  ul.b {
-    list-style-type: none;
-    color: blue;
-  }
-  
-  li.a {
-    color: blue;
-  }
+  color: orange;
+}
+
+
+
+a:hover {
+  color: orange;
+}
