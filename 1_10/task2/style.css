@@ -1,0 +1,43 @@
+.background {
+    background-color: #FFFFCE;
+  
+  
+  }
+  
+  #box-3 {
+    color: red;
+    border: 2px dotted red;
+    font-size: 20px;
+    background-color: white;
+    width: 60%;
+  }
+  
+  #hed {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 3px;
+    margin-bottom: 3px;
+  }
+  
+  .ipsum {
+    background-color: #FDCA96;
+  }
+  
+  .quis {
+    background-color: #FDFD96;
+  }
+  
+  .boxClass {
+    padding: 29px 18px 9px;
+    border: 2px solid black;
+    font-size: 20px;
+    width: 60%;
+    background-color: white;
+  }
+  
+  
+  .red {
+    color: red;
+    border: 2px dotted red;
+    margin: 14px -5px 13px;
+  }
