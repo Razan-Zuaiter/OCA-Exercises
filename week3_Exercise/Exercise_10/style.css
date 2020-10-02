@@ -1,0 +1,31 @@
+.box1 {
+    background-color: yellow;
+    height: 92em;
+    width: 92em;
+    border: 2em solid green;
+  
+  }
+  
+  .box2 {
+    background-color: yellow;
+    height: 83em;
+    width: 84em;
+    border: 2em solid green;
+    margin: 2em 0em 2em 2em;
+  
+  }
+  
+  .box3 {
+    background-color: green;
+    height: 62%;
+    width: 91%;
+    margin: 3em 3em 6em 3em;
+    padding: 24em 0em 1em 2em;
+  }
+  
+  p {
+    text-align: center;
+    color: white;
+    font-size: 8em;
+    ;
+  }
