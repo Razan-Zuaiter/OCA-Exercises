@@ -1,0 +1,16 @@
+.box_yallow {
+    background-color: yellow;
+    height: 3.5em;
+    width: 3.5em;
+    border: .1em solid black;
+    margin: 0em 0em 2em 0em;
+    display: inline-block;
+  }
+  
+  .box_green {
+    background-color: green;
+    height: 3.5em;
+    width: 3.5em;
+    border: .1em solid black;
+    display: inline-block;
+  }
