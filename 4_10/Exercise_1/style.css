@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-gap: 1%;
+  
+  }
+  
+  .box_black {
+    grid-row: 1/ span 8;
+    grid-column: 1 / span 22;
+  
+    background-color: black;
+    padding: 2%;
+  }
+  
+  .box_orange {
+    grid-row: 12/span 28;
+    grid-column: 1/span 15;
+  
+    background-color: orange;
+    padding: 10%;
+  
+  
+  }
+  
+  .box_green {
+    grid-row: 12 /span 28;
+    grid-column: 16/span 7;
+  
+    background-color: green;
+    padding: 10%;
+  
+  }
+  
+  .box_blue {
+    grid-row: 44/span 18;
+    grid-column: 1/span 22;
+  
+    background-color: blue;
+    padding: 2%;
+  
+  }
