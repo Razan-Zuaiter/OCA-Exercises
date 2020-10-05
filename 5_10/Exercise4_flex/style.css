@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #FFFFBA;
+  }
+  
+  /* Container for flex        */
+  #container {
+    display: flex;
+    flex-direction: column;
+    height: 26em;
+    width: 23em;
+    background-color: #FFFFFF;
+    border-radius: 20%;
+    margin: 3em 0em 0em 44em;
+    padding: 1.5em 0.5em 0em 0.5em;
+  
+  }
+  
+  /*  holder for photo & text inside the Container       */
+  .box_user {
+    display: flex;
+    width: 12em;
+    height: 5em;
+    padding: 0em 0em 0em 1em;
+  }
+  
+  img {
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    margin: 0em 1em 0em 0em;
+    opacity: 50%;
+  }
+  
+  sub {
+    color: #949393;
+    font-size: .7rem;
+    display: flex;
+  }
+  
+  
+  p {
+    font-size: 1.2rem;
+    color: black;
+    font-weight: bold;
+  
+  }
+  
+  
+  hr {
+    width: 95%;
+  }
