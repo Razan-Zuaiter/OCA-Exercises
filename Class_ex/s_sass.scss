@@ -1,0 +1,38 @@
+$header-color :rgba(243, 176, 30, 0.473);
+$content-color:rgba(22, 164, 230, 0.726);
+$sidebar-color: rgba(100, 178, 230, 0.767);
+$box-1-color: rgba(0, 183, 255, 0.726);
+$box-2-color:rgba(8, 183, 226, 0.726);
+$box-3-color:rgba(0, 183, 255, 0.726);
+$footer-color : rgba(236, 169, 45, 0.726);
+$my-font:arial;
+
+
+
+.header {
+  background-color: $header-color;
+}
+
+.content {
+  background-color: $content-color;
+}
+
+.sidebar {
+  background-color: $sidebar-color;
+}
+
+.box-1 {
+  background-color: $box-1-color;
+}
+
+.box-2 {
+  background-color: $box-2-color;
+}
+
+.box-3 {
+  background-color: $box-3-color;
+}
+
+.footer {
+  background-color: $footer-color;
+}
