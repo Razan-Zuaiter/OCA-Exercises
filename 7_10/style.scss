@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+  }
+  $width-container:100%;
+  $padding:.75rem;
+  $columns: 12;
+  $background:orange;
+  $color: white;
+  $align:center;
+  $border-size:.25rem;
+  $font-size:2.5rem ;
+  .container {
+   
+    max-width: $width-container;
+   
+   
+  }
+  
+  div[class^="col-"] {
+    color: $color;
+    background: $background;
+    text-align:$align; 
+    border: $border-size solid $color;
+    padding:$padding;
+    font-size: $font-size;
+   
+  }
+   
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  
+  
+  
+  
+  @for $i from 1 through $columns
+   { .col-#{$i}
+      {flex: 0 0 100% / $columns * $i}
+   }
+  
+  
+  /* ( in Css )
+  
+  
+  .col-12 {
+    flex: 0 0 100%;
+  }
+  
+  .col-6 {
+    flex: 0 0 calc(100% /12 *6 );
+  }
+  
+  .col-4 {
+    flex: 0 0 calc(100% /12 *4 );
+  
+  }
+  .col-3 {
+    flex: 0 0 calc(100% /12 *3 );
+  }
+  
+  
+  .col-2 {
+    flex: 0 0 calc(100% /12 *2 );
+  }
+  
+  
+  .col-1 {
+    flex: 0 0 calc(100% /12 *1 );
+  }
+  
+  */
