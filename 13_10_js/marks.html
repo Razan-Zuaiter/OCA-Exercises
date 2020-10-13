@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>marks</title>
+</head>
+
+<body>
+
+
+
+
+
+
+
+  <script>
+    var name = prompt("Enter your Name ");
+    var Math = prompt("Enter your mark in math");
+    var English = prompt("Enter your mark in  English");
+    var Arabic = prompt("Enter your mark in  Arabic");
+    var Bio = prompt("Enter your mark in Bio ");
+    var Computer = prompt("Enter your mark in Computer");
+    var Religion = prompt("Enter your mark in Religion");
+    const subject_number = 6;
+    var summation;
+
+
+    summation = eval(Math) + eval(English) + eval(Arabic) + eval(Bio) + eval(Computer) + eval(Religion);
+    if (summation > 600) {
+      alert("re write your marks , you made an error ");
+      alert("your marks should only be < 100 ");
+    } else {
+      var avg = summation / subject_number;
+
+
+      if (avg >= 50 && avg < 60) document.write(" Your result is :  Pass");
+      else if (avg >= 60 && avg < 70) document.write(" Your result is :  average");
+      else if (avg >= 70 && avg < 80) document.write("  Your result is : good");
+      else if (avg >= 80 && avg < 90) document.write(" Your result is : very good");
+      else if (avg >= 90 && avg < 100) document.write("  Your result is :Excellent");
+    }
+  </script>
+</body>
+
+</html>
