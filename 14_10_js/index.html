@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>daily task</title>
+</head>
+
+<body>
+
+  <div>
+    <h1> Daily Task </h1>
+    <p>  Open consol to see results   </p>
+  </div>
+  <!--   First Function   -->
+
+
+
+  <script>
+    var sumOdd = 0;
+    var sumEven = 0;
+    var Array = [];
+
+    for (i = 0; i < 10; i++) {
+      Array.push(i + 1);
+      console.log("The process to fill the Array : " + Array)
+    }
+    console.log("-----------------------------------------------------")
+    console.log("Array become after for loop : " + Array)
+
+
+    function Summ(Array) {
+      for (i = 0; i < 10; i++) {
+        if (Array[i] % 2 == 0) {
+          sumEven += Array[i];
+
+        } else {
+          sumOdd += Array[i];
+
+        }
+      }
+      return sumEven ,sumOdd ;
+    }
+    console.log("-----------------------------------------------------")
+    Summ(Array);
+    console.log("the summation of even numbers =  " + sumEven);
+      console.log("the summation of odd numbers =   " + sumOdd);
+  </script>
+
+
+
+
+</body>
+
+</html>
