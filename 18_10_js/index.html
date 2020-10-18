@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>daily task</title>
+</head>
+
+
+<body>
+
+  <div>
+    <h1> Daily Task </h1>
+
+
+  </div>
+
+
+
+
+  <script>
+    function print() {
+      for (i = 1; i <= 5; i++) {
+        for (j = 1; j <= i; j++) {
+          document.write('*');
+
+        }
+        document.write('<br/>');
+      }
+
+    }
+    print();
+    document.write("-----------------------------------------------------");
+    document.write('<br/>');
+
+
+
+    for (i = 1; i <= 5; i++) {
+      var str = "&nbsp";
+
+      for (j = 1; j < 5; j++) {
+        if (i + j >= 5) {
+
+          str += "*";
+
+        } else {
+          str += "&nbsp";
+
+        }
+
+      }
+      document.write(str);
+      document.write('<br/>');
+
+    }
+
+    document.write("-----------------------------------------------------");
+    document.write('<br/>');
+
+    function printStar(str2) {
+      var str2 = prompt("Enter any shape ");
+      for (var i = 1; i <= 5; i += 2) {
+        document.write("&nbsp".repeat((5 - i) / 2) + str2.repeat(i));
+        document.write('<br/>');
+      }
+
+
+    }
+
+    printStar();
+  </script>
+
+
+
+
+</body>
+
+</html>
