@@ -64,14 +64,17 @@
       var regularExpression = new RegExp(/^[a-zA-Z0-9!@#$%^&*]{6,16}$/);
       var regexPhone = new RegExp(/^[\+]?[(]?[0-9]{5}[)]?[-\s\.]?[0-9]{5}[-\s\.]?[0-9]{4,6}$/im);
 
-      if (name.test(regularExpression) != true) {
-        alert("your must writer your name correctly ");
-      } else if (number.test(regexPhone) != true) {
-        alert("your must writer your namumber correctly ");
-      } else if (email.test(regularExpression) != true) {
-        alert("your must writer your e-mail correctly ");
-      } else(password.test(passRegex) != true) {
-        alert("your password should conation upperCase and special char.");
+      if (regularExpression.test(name) != true) {
+        alert("your must writer your name correctly ");  return false; 
+      } 
+      else if (regexPhone.test(number) != true)  {
+        alert("your must writer your number correctly ");  return false;
+      } 
+      else if (regexPhone.test(email) != true) {
+        alert("your must writer your e-mail correctly ");  return false;
+      } 
+      if (passRegex.test(password) != true) {
+        alert("your password should conation upperCase and special char.");  return false;
       }
 
 
