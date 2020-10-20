@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+<h1> Open Consol </h1>
+  <script>
+    // 1st class 
+    class Person {
+      constructor(id, name, age) {
+        this.id = id;
+        this.name = name;
+        this.age = age;
+
+      }
+
+      // Encapsulation (function inside class)
+      Greeting() {
+
+        alert(" welcome  " + this.name + "  !");
+
+
+      }
+
+      // Encapsulation
+      //This function has no parameter,but inside it is bring 3 parameters(attributes) from the class  scope
+      printArrow = () => {
+        console.log(this.id + "   " + this.name + "  " + this.age);
+      }
+
+    }
+
+    //inheritance Teacher from Person
+    class Teacher extends Person {
+
+      constructor(id, name, age) {
+        super(id, name, age);
+
+      }
+      //polymorphism , the same function's name in parent's class but overwrite the message alert
+      Greeting() {
+
+        alert(" welcome  student " + this.name + " How are you today !");
+
+
+      }
+    }
+    //2nd class
+
+    class Car {
+      constructor(id, type, year) {
+        this.id = id;
+        this.type = type;
+        this.year = year;
+      }
+
+
+      start() {
+        //Abstraction
+        // hidden operation done on year 
+        this.year += 1000;
+        console.log(this.type + " ==> the car is running ");
+        console.log(this.year + " ==> the year is change ! ");
+
+      }
+
+
+
+    }
+
+    // 3rd class
+    class Animal {
+      constructor(id, name, isPet) {
+        this.id = id;
+        this.name = name;
+        this.isPet = isPet;
+      }
+
+      homeAnimal() {
+        if (this.isPet) {
+          console.log(this.id + "   " + this.name + "   " + this.isPet);
+        }
+      }
+    }
+
+    console.log("===============================================================");
+
+    //inheritance
+
+    console.log("Is Teacher a subclass form  Person ?");
+    console.log(Teacher.prototype instanceof Person);
+    console.log("===============================================================");
+
+
+    let person1 = new Person(123555, "razan", 23);
+    console.log(person1);
+    person1.Greeting();
+    // person1.getTeacherInfo();   // you can not access this function outside Person class (abstraction)
+    person1.printArrow(person1.id);
+
+
+
+    let person2 = new Person(58685, " Reema ", 21);
+    console.log(person2);
+    person2.Greeting();
+    person2.printArrow(person1.id);
+
+
+    let Sobhi = new Teacher(78955, " Sobhi ", 15);
+    console.log(Sobhi);
+    //polymorphism
+    Sobhi.Greeting();
+
+    console.log("===============================================================");
+
+    let car1 = new Car(77777, "toyota", 2018);
+    console.log(car1);
+    car1.start();
+
+    let car2 = new Car(77777, "BMW", 2020);
+    console.log(car2);
+    car2.start();
+
+    console.log("===============================================================");
+
+    let animal1 = new Animal(11, "lion", true);
+    console.log(animal1);
+    animal1.homeAnimal();
+
+    let animal2 = new Animal(12, "elephant", false);
+    console.log(animal2);
+    animal2.homeAnimal();
+  </script>
+</body>
+
+</html>
