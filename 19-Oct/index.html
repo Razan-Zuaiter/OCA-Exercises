@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <script>
+    // 1st class 
+    class person {
+      constructor(name, salary) {
+        this.name = name;
+        this.salary = salary;
+      }
+
+      increment(salary) {
+        salary += 500;
+        console.log("the new salary is  " + salary)
+      }
+
+
+    }
+
+    class work extends person {
+      constructor(name, salary, job) {
+        super(name, salary);
+        this.job = job;
+      }
+      Job(job) {
+
+        console.log(this.name + "   your salary  is   " + this.salary + "   and your job is   " + this.job)
+      }
+
+    }
+    //2nd class
+
+    class car {
+      constructor(model, color) {
+        this.model = model;
+        this.color = color;
+      }
+      wheel() {
+
+        return ` great! ${this.model} is a fast car`;
+      }
+    }
+
+
+
+
+
+    // 3rd class
+    class animal {
+      constructor(name, size) {
+        this.name = name;
+        this.size = size;
+
+      }
+
+      IsDanger(name) {
+
+
+        if (name == ("lion" || "tiger")) {
+          return `stay a way from  ${this.name}  it is dangerous`
+        } else {
+          return `you are safe  ${this.name}  is not dangerous`
+        }
+      }
+
+    }
+
+    class food extends animal {
+      constructor(name, size, meal) {
+        super(name, size);
+        this.meal = meal;
+      }
+      feed(meal) {
+
+        console.log(`${this.name}  is  ${this.size}. and eats ${this.meal}`);
+      }
+
+    }
+
+    console.log("===============================================================");
+    let addition = (a, b) => "Summation is " + (a + b);
+    console.log(addition(10, 8));
+
+    console.log("===============================================================");
+    //let p1 = new person("razan", 500);
+    //console.log(p1);
+    let person1 = new work("razan", 500, "engineer");
+    console.log(person1);
+    person1.increment(person1.salary);
+    console.log(typeof person1);
+
+    let person2 = new work("dana", 700, "teacher");
+    console.log(person2);
+    person1.increment(person2.salary);
+    console.log(typeof person2);
+    console.log("===============================================================");
+
+
+
+
+    let car1 = new car("toyota", " red");
+    console.log(car1);
+    console.log(car1.wheel());
+
+
+    let car2 = new car("Mercedes", "black");
+    console.log(car2);
+    console.log(car2.wheel());
+
+
+
+
+
+    console.log("===============================================================");
+    //let Lion = new animal("lion", " big");
+    // // console.log(Lion);
+    let animal1 = new food("lion", " big", "meat");
+    console.log(animal1);
+    console.log(animal1.IsDanger(animal1.name));
+
+
+    let animal2 = new food("elephant", " big", "meat");
+    console.log(animal2);
+    console.log(animal2.IsDanger(animal2.name));
+  </script>
+</body>
+
+</html>

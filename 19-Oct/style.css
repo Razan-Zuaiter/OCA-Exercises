@@ -1,0 +1,49 @@
+body{
+    background:url(https://img.freepik.com/free-vector/white-3d-modern-background-design_53876-88246.jpg?size=626&ext=jpg);
+    background-size: cover;
+    }
+    
+    .container{
+     width: 25rem;
+    height:28rem;
+    margin: 8rem auto;
+    padding: .5rem 1.5rem;
+    background-color: rgb(88, 74, 146);
+    color:white;
+    border-radius: 1rem;
+    }
+    
+    input{
+    border-radius: 4rem;
+    box-shadow:15%;
+    width:24rem;
+    height:2rem;
+    }
+    
+    button {
+      background-color: #9776a1;
+      color: white;
+      padding: .75rem;
+      margin: 8px 0;
+      border-radius: 1rem;
+      cursor: pointer;
+      width: 50%;
+      float: right;
+      font-size:1rem ;
+     
+    }
+    
+    button:hover {
+      opacity: 0.8;
+    }
+    
+    a{
+    
+      color :goldenrod;
+    }
+    
+    h2{
+      font-size:2rem ;
+      text-align: center;
+    
+    }

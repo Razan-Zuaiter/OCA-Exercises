@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <h2> Create an Account </h2>
+    <hr><br>
+
+    <form action="" method="get" class="form-example" name="form" id="form">
+      <div>
+        <label for="name"> </label>
+        <input type="text" id="name" placeholder="Name" class="fas fa-user">
+      </div> <br>
+
+      <div>
+        <label for="number"> </label>
+        <input type="text" id="number" placeholder="Number">
+      </div><br>
+
+      <div>
+        <label for="email"> </label>
+        <input type="text" id="email" placeholder="Email">
+      </div><br>
+
+      <div>
+        <label for="text" visibility="hidden"> </label>
+        <input type="text" name="text" id="password" placeholder="Password">
+      </div><br>
+
+      <div>
+        <label>
+          <input type="checkbox" id="check" style="width:1.25rem;
+          height:1.25rem;" onclick="allow()"> I agree term of <a
+            href="https://www.investopedia.com/ask/answers/08/term-life-insurance.asp "> policy </a>
+        </label>
+        <br>
+
+        <button type="submit" onclick="valid()" id="submit">Create Account</button>
+      </div>
+
+    </form>
+  </div>
+
+  <script>
+    function valid() {
+      const form = document.getElementById('form').value;
+      const name = document.getElementById('name').value;
+      const number = document.getElementById('number').value;
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+      const checkbox = document.getElementById("check");
+
+
+      var passRegex = new RegExp(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/);
+      var regularExpression = new RegExp(/^[a-zA-Z0-9!@#$%^&*]{6,16}$/);
+      var regexPhone = new RegExp(/^[\+]?[(]?[0-9]{5}[)]?[-\s\.]?[0-9]{5}[-\s\.]?[0-9]{4,6}$/im);
+
+      if (name.test(regularExpression) != true) {
+        alert("your must writer your name correctly ");
+      } else if (number.test(regexPhone) != true) {
+        alert("your must writer your namumber correctly ");
+      } else if (email.test(regularExpression) != true) {
+        alert("your must writer your e-mail correctly ");
+      } else(password.test(passRegex) != true) {
+        alert("your password should conation upperCase and special char.");
+      }
+
+
+    }
+
+    function allow() {
+      if (checkbox.checked) {
+        alert("account created successfully");
+      } else {
+        form.addEventListener('submit', (e) => {
+
+          e.preventDefault();
+        })
+      }
+    }
+  </script>
+</body>
+
+</html>
