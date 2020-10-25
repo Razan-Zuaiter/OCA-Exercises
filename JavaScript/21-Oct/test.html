@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <p><button onclick="clickCounter()" type="button">Click me!</button></p>
+  <div id="result"></div>
+  <p>Click the button to see the counter increase.</p>
+  <p>Close the browser tab (or window), and try again, and the counter is reset.</p>
+  <script>
+    function clickCounter() {
+      if (typeof (Storage) !== "undefined") {
+        if (sessionStorage.clickcount) {
+          sessionStorage.clickcount = Number(sessionStorage.clickcount) + 1;
+        } else {
+          sessionStorage.clickcount = 1;
+        }
+        document.getElementById("result").innerHTML = "You have clicked the button " + sessionStorage.clickcount +
+          " time(s) in this session.";
+      } else {
+        document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+      }
+    }
+    // const user = {
+    //   email: 'oca@gmmail.com'
+    // };
+
+    // if (!user.name) {
+    //   //  throw new SyntaxError('user dose not have a \'name\' key(property)')
+
+    // }
+
+    // function myFunction() {
+    //   return true;
+    // }
+    // try {
+
+    //   //null.myFunction();
+    //   eval('Good Morning');
+    //   consol.log('Hi');
+    //   // decodeURIComponent('%');
+    // } catch (e) {
+    //   console.log(`user Error :  ${e.message}`);
+    // } finally {
+    //   console.log('this only appear here');
+    // }
+    // console.log('Hi razan');
+  </script>
+</body>
+
+</html>
